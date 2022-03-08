@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string name = "Mohan";
+}
+
+<div>My Name: @name</div>
+
+@for (var i = 1; i <= 10; i++)
+{
+    <div>
+        @if (i % 2 == 0)
+        {
+             <div>Even Number: @i</div>
+        }
+        else
+        {
+            <div>Odd Number: @i</div>
+        }
+    </div>
+}
